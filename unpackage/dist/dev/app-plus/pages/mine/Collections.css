@@ -1,0 +1,91 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 边框粗细 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 标题 */
+.title-Collections {
+  margin-left: 5%;
+  font-size: 22px;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+  margin-top: 28px;
+}
+.collections {
+  display: flex;
+  /* 设置为 flex container */
+  flex-wrap: wrap;
+  /* 允许内容换行 */
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.collections-img {
+  margin-bottom: 0.15625rem;
+  width: 94%;
+  max-height: 22vh;
+  border-radius: 0.46875rem;
+  margin-top: 0.3125rem;
+  margin-left: 3%;
+}
+.collections-box {
+  width: 45.4%;
+  /* 这里我们为两列之间预留了 10px 的间距，您可以根据需要调整 */
+  margin-right: 2.3%;
+  /* 两列之间的间距 */
+  margin-left: 2.3%;
+  box-sizing: border-box;
+  /* 使宽度包括 padding 和 border */
+  margin-bottom: 20px;
+  /* 如果您想在行之间添加间隔 */
+  border: 0.09375rem solid #D3D3D3;
+  border-radius: 0.46875rem;
+}
+.collections-name {
+  margin-left: 3%;
+  color: #808080;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.collections-state {
+  display: flex;
+  justify-content: space-between;
+}
+.collections-price {
+  margin-left: 3%;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 0.3125rem;
+}
+.collections-timeInterval {
+  margin-right: 3%;
+  font-size: 14px;
+  margin-top: 0.1875rem;
+}
+/* 清除每行最后一个元素的 margin-right */
+.collections-box:nth-child(2n) {
+  margin-right: 0;
+}

@@ -1,0 +1,257 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 边框粗细 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 公共样式 */
+body {
+  background-color: #ffffff;
+}
+.contents {
+  padding-top: var(--status-bar-height);
+}
+/* 顶部 */
+.top-bar {
+  z-index: 100;
+  width: 95%;
+  height: 2.75rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-bottom: 0.03125rem solid #c8c7cc;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: var(--status-bar-height);
+  box-shadow: 0.03125rem 0.03125rem 0.625rem 0.0625rem rgba(117, 112, 117, 0.2);
+}
+.top-bar .top-bar-left {
+  float: left;
+}
+.top-bar .top-bar-left uni-image {
+  width: 2.125rem;
+  height: 2.125rem;
+  margin-top: 0.3125rem;
+  border-radius: 0.5rem;
+}
+.top-bar .top-bar-center {
+  float: left;
+}
+.top-bar .top-bar-center .logo {
+  display: inline-block;
+  padding-top: 0.5625rem;
+  font-size: 24px;
+  color: #000000;
+}
+.top-bar .top-bar-center .title {
+  line-height: 2.75rem;
+}
+.top-bar .top-bar-right {
+  float: right;
+  box-shadow: 0.25rem 0.3125rem 0.78125rem -0.15625rem rgba(117, 112, 117, 0.3);
+  border-radius: 1.25rem;
+}
+.top-bar .top-bar-right .search {
+  display: inline-block;
+  width: 2.1875rem;
+  height: 2.4375rem;
+  padding-left: 0.375rem;
+}
+.top-bar .top-bar-right .add {
+  width: 2.4375rem;
+  height: 2.4375rem;
+  display: inline-block;
+}
+.top-bar .top-bar-right i {
+  width: 1.625rem;
+  height: 1.625rem;
+  display: inline-block;
+  font-size: 19px;
+  padding: 0.75rem 0.15625rem 0.15625rem 0.46875rem;
+}
+/* 底部 */
+.bottom {
+  position: fixed;
+  bottom: 0.625rem;
+  width: 100%;
+  height: 3.25rem;
+  box-sizing: border-box;
+  padding: 0.375rem 8px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.bottom .bottom-btn {
+  height: 2.5rem;
+  margin: 0 auto;
+  background: #000000;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 16px;
+  color: #333;
+}
+.btn1 {
+  height: 2.5rem;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 16px;
+  color: #333;
+}
+/* 顶部 */
+.top-bar {
+  box-shadow: none;
+  border-bottom: none;
+}
+.top-bar .top-bar-right {
+  box-shadow: none;
+  padding-right: 0.25rem;
+}
+.top-bar .top-bar-right .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.75rem;
+}
+/* logo */
+.logo .moni-img-logo {
+  padding-top: 8rem;
+  width: 6.0625rem;
+  height: 2.875rem;
+  font-size: 1.875rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #2234CF;
+}
+/* 主体 */
+.main {
+  padding: 1.6875rem 15px 3.75rem;
+}
+.main .slogan {
+  text-align: left;
+  color: #999;
+  line-height: 1.75rem;
+}
+.main .slogan span {
+  font-size: 1.5625rem;
+  color: #333;
+  font-weight: bold;
+}
+.main .inputs {
+  padding-top: 1.5rem;
+}
+.main .inputs uni-input {
+  padding-top: 1.25rem;
+  height: 1.25rem;
+  font-size: 16px;
+  fonf-weight: 500;
+  color: #333;
+  line-height: 2.75rem;
+  border-bottom: 0.03125rem solid #c8c7cc;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .inputgroup {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main .inputs-div {
+  position: relative;
+}
+.main .tips {
+  font-size: 16px;
+  color: #dd524d;
+  line-height: 1.75rem;
+  float: right;
+}
+.main .eye-img-container {
+  position: relative;
+}
+.main .eye-img {
+  width: 1.9375rem;
+  height: 1.625rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -30px;
+  margin-right: 5px;
+}
+.main .eye-open {
+  width: 1.5625rem;
+  height: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -31px;
+  margin-right: 8px;
+}
+.main .employ,
+.main .invalid {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  font-size: 14px;
+  fonf-weight: 500;
+  color: #f0ad4e;
+  line-height: 2.75rem;
+}
+.main .ok {
+  position: absolute;
+  right: 0;
+  top: 2.1875rem;
+  width: 1.3125rem;
+  height: 1rem;
+  color: #4cd964;
+}
+.submit {
+  margin: 0 auto;
+  width: 85%;
+  height: 3rem;
+  background: #2234CF;
+  border-radius: 3px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 3rem;
+  text-align: center;
+  box-shadow: 0.25rem 0.3125rem 0.78125rem -0.15625rem rgba(117, 112, 117, 0.3);
+}
+/* 底部logo */
+.bot-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  bottom: 0.46875rem;
+  right: 0;
+  color: #999;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,203 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/signin/signin",
+			"style": {
+				"navigationBarTitleText": "登陆",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/signup/signup",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom"
+			}
+		}, 
+		{
+			"path": "pages/homepage/homepage",
+			"style": {
+				"navigationBarTitleText": "homepage",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		}, 
+		{
+			"path": "pages/moreschool/moreschool",
+			"style": {
+				"navigationBarTitleText": "moreschool",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		}, 
+		{
+			"path": "pages/add/add",
+			"style": {
+				"navigationBarTitleText": "add",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		}, 
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "search",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "category",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "mine",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}
+	    ,{
+            "path" : "pages/mine/Followcomponent",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Followcomponent",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/Collections",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+        {
+        	"path" : "pages/message/message",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+		{
+			"path" : "pages/message/communication/communication",
+			"style": {
+				"navigationBarTitleText": "category",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goodsdetail/goodsdetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		},
+		{
+			"path": "pages/moreschool/schooldetail",
+			"style": {
+				"navigationBarTitleText": "schooldetail",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
+		},
+		{
+			"path" : "pages/message/communication/submit",
+			"style": {
+				"navigationBarTitleText": "category",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/message/communication/emoji",
+			"style": {
+				"navigationBarTitleText": "category",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/payment/alipay",
+			"style": {
+				"navigationBarTitleText": "alipay"
+			}
+		}
+    ],
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"iconWidth": "30px",
+		"list": [{
+				"pagePath": "pages/homepage/homepage",
+				"iconPath": "static/image/home.png",
+				"selectedIconPath": "static/image/homet.png",
+				"text": "Home"
+			},
+			{
+				"pagePath": "pages/add/add",
+				"iconPath": "static/image/add.png",
+				"selectedIconPath": "static/image/addt.png",
+				"text": "Add"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/image/message.png",
+				"selectedIconPath": "static/image/messaget.png",
+				"text": "Message"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/image/mine.png",
+				"selectedIconPath": "static/image/minet.png",
+				"text": "Mine"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

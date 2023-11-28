@@ -1,0 +1,51 @@
+
+.follow-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 30px;
+}
+.follow-btn-container {
+		margin-left: 4%;
+		width: 44vw;
+}
+.follow-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		padding: 8px 12px;
+		background-color: #0000CD;
+		color: white;
+		border-radius: 6px;
+		font-size: 18px;
+}
+.followed-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		padding: 8px 12px;
+		background-color: #6f6f6f;
+		color: white;
+		border-radius: 6px;
+		font-size: 18px;
+}
+.count-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 2vw;
+		padding-left: 3vw;
+}
+.number {
+		font-size: 24px;
+		font-weight: 600;
+		/* 你可以调整字体大小 */
+}
+.description {
+		font-size: 14px;
+		color: #808080;
+		font-weight: 600;
+		/* 同样可以根据需要调整 */
+}

@@ -1,0 +1,108 @@
+/* 公共样式 */
+
+body {
+  background-color: $uni-bg-color;
+}
+.contents {
+		padding-top: var(--status-bar-height);
+}
+
+/* 顶部 */
+.top-bar {
+		z-index: 100;
+		width: 95%;
+		height: 88rpx;
+		// box-sizing: border-box;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background:  $uni-bg-color;
+		border-bottom: 1rpx solid $uni-border-color;
+		padding-left: $uni-spacing-col-base;
+		padding-right: $uni-spacing-col-base;
+		padding-top: var(--status-bar-height); // 解决移动端顶部电量与页面距离
+		box-shadow: 1rpx 1rpx 20rpx 2rpx rgba(117, 112, 117, 0.2);
+		.top-bar-left {
+			float: left;
+			image {
+				width: 68rpx;
+				height: 68rpx;
+				margin-top: 10rpx;
+				border-radius: 16rpx;
+			}
+		}
+		.top-bar-center {
+			// position: absolute;
+			// text-align: center;
+			// left: 0;
+			// right: 0;
+			// bottom: 0;
+			// top: 0;
+			float: left;
+			
+			.logo {
+				display: inline-block;
+				padding-top: 18rpx;
+				font-size: 24px;
+				color: $uni-color-primary;
+			}
+			.title {
+				line-height: 88rpx;
+			}
+		}
+		.top-bar-right {
+			float: right;
+			box-shadow: 8rpx 10rpx 25rpx -5rpx rgba(117, 112, 117, 0.3);
+			border-radius: 40rpx;
+			.search {
+				display: inline-block;
+				width: 70rpx;
+				height: 78rpx;
+				padding-left: 12rpx;
+			}
+			.add {
+				width: 78rpx;
+				height: 78rpx;
+				display: inline-block;
+			}
+			i {
+				width: 52rpx;
+				height: 52rpx;
+				display: inline-block;
+				font-size: 19px;
+				padding: 24rpx 5rpx 5rpx 15rpx;
+			}
+		}
+	}
+	
+	
+/* 底部 */
+.bottom {
+	position: fixed;
+	bottom: 20rpx;
+	width: 100%;
+	height: 104rpx;
+	box-sizing: border-box;
+	padding: 12rpx $uni-spacing-col-base;
+	padding-bottom: env(safe-area-inset-bottom);
+	
+	.bottom-btn {
+		height: 80rpx;
+		margin: 0 auto;
+		background: $uni-color-primary;
+		border-radius: $uni-border-radius-base;
+		text-align: center;
+		line-height: 80rpx;
+		font-size: $uni-font-size-lg;
+		color: $uni-text-color;
+	}
+}
+
+.btn1 {
+	height: 80rpx;
+	border-radius: $uni-border-radius-base;
+	text-align: center;
+	line-height: 80rpx;
+	font-size: $uni-font-size-lg;
+	color: $uni-text-color;
+}

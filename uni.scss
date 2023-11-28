@@ -1,0 +1,113 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-primary: #000000;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+$uni-color-logo: #2234CF;//logo颜色+negotiate-button颜色
+$uni-color-refresh-icon:rgba(39, 40, 50, 0.8);//下拉刷新图标颜色
+
+
+/* 文字基本颜色 */
+$uni-text-color:#333;//基本色
+$uni-text-color-inverse:#fff;//反色
+$uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;//主界面bid颜色
+$uni-text-color-disable:#c0c0c0;
+$uni-tetx-color-search-text:#7f7f81;//首页搜素框提示文字颜色
+$uni-color-refresh-title:rgba(39, 40, 50, 0.4);//下拉刷新提示语颜色
+$uni-bg-color-moreschool-count:#808080;//学校列表次序提示颜色
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask: rgba(117, 112, 117, 0.3);//遮罩颜色
+//$uni-bg-color-button: rgba(60, 213, 255, 1.0);
+$uni-bg-color-button: #2234CF;
+$uni-bg-color-button-dark: #2234CF;
+$uni-bg-color-submit-box-shadow: rgba(255, 220, 49, 0.4);
+$uni-bg-color-submit1:rgba(39, 40, 50, 0.2);//注册中心底部灰色注册按钮
+$uni-bg-color-delete:rgba(31, 31, 31, 0.5);//添加界面删除键颜色
+
+/* 边框颜色 */
+$uni-border-color:#c8c7cc;
+$uni-border-color-search-bar-box:#c0c0c0;//搜索框边框颜色
+$uni-border-color-interested-box:#D3D3D3;//首页搜索框+学校框边框+输入信息框
+
+/* 尺寸变量 */
+
+/* 边框粗细 */
+$uni-border-caliber:5rpx;
+$uni-border-input-caliber:1px;//登陆注册中心输入框粗细
+
+/* 文字尺寸 */
+$uni-font-size-sm:12px;
+$uni-font-size-base:14px;
+$uni-font-size-lg:16px;
+$uni-font-size-logo:60rpx; //logo文字大小
+$uni-font-size-slogan:50rpx;//登陆与注册中心题目大小
+$uni-font-size-submit: 19px;//登陆与注册中心提交框字体大小
+$uni-font-size-bot-logo:0.8rem;//登陆与注册中心底部logo字体大小
+
+$uni-font-size-search-text:30rpx;//首页搜索框提示文字大小
+$uni-font-size-refresh-icon:32rpx;//下拉刷新图标大小
+$uni-font-size-homepage-title:40rpx;//首页推荐题目大小
+$uni-font-size-homepage-username:42rpx;//首页推荐框用户名称大小
+$uni-font-size-schoolname:18rpx;//学校列表学校名称大小
+
+$uni-font-size-add-title:45rpx;//添加界面+搜索界面标题大小
+$uni-font-size-add-clue:30rpx;//添加界面提示文字大小
+
+/* 图片尺寸 */
+$uni-img-size-sm:20px;
+$uni-img-size-base:26px;
+$uni-img-size-lg:40px;
+
+/* Border Radius */
+$uni-border-radius-sm: 2px;
+$uni-border-radius-base: 3px;
+$uni-border-radius-lg: 6px;
+$uni-border-radius-circle: 50%;//用户头像照片
+$uni-border-radius-inputs:10px;//注册中心+登陆界面输入框
+$uni-border-radius-homepage-box:20rpx;//首页搜索框+推荐框+上传信息框
+$uni-border-radius-homepage-school:10rpx;//首页学校推荐框
+$uni-border-radius-upload:5px;//上传框
+$uni-border-radius-add-inputs:15rpx;//添加界面输入框
+
+/* 水平间距 */
+$uni-spacing-row-sm: 5px;
+$uni-spacing-row-base: 10px;
+$uni-spacing-row-lg: 15px;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 4px;
+$uni-spacing-col-base: 8px;
+$uni-spacing-col-lg: 12px;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:20px;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:26px;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:15px;
