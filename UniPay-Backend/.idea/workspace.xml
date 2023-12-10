@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc84a5fe-9538-47f3-89a8-d6d266b337de" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/UniPay-Backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniPayDemo/aliPay/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UniServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UniPayDemo/aliPay/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UniPayDemo/aliPay/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

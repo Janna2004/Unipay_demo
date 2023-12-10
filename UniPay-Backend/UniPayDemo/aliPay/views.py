@@ -4,8 +4,8 @@ from django.http import JsonResponse
 from alipay import AliPay
 
 APPID="2021004129669299"
-APP_PRIVATE_KEY_PATH="/app_private_key.pem"
-ALIPAY_PUBLIC_KEY_PATH="/alipay_public_key.pem"
+APP_PRIVATE_KEY_PATH="/app_private_key.pem" # 生成的私钥路径，需要根据实际修改
+ALIPAY_PUBLIC_KEY_PATH="/alipay_public_key.pem" # 生成的公钥路径，需要根据实际修改
 
 def get_order_info(self,total_pay,request):
     # 参数设置
