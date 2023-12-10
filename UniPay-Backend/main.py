@@ -6,15 +6,16 @@ from django.shortcuts import render
 from django.views.generic import View
 
 APPID="2016102200736331"
-
+APP_PRIVATE_KEY_PATH="/app_private_key.pem"
+ALIPAY_PUBLIC_KEY_PATH="/alipay_public_key.pem"
 
 
 class OrderPayView(View):
 	def post(self,total_pay,request):
 		#接收参数
 		order_id = str(uuid.uuid1())
-		merchant_private_key_path = open(os.path.join("D:/gitee/Alipy_WX/payments/keys/app_private_key.pem")).read()
-		alipay_public_key_path = open(os.path.join("D:/gitee/Alipy_WX/payments/keys/alipay_public_key.pem")).read()
+		merchant_private_key_path = open(os.path.join(APP_PRIVATE_KEY_PATH)).read()
+		alipay_public_key_path = open(os.path.join(ALIPAY_PUBLIC_KEY_PATH)).read()
 		# print(x,'eeeee')
 
 		# 检验总金额是否等于业务金额，防止传输过程中被篡改
@@ -32,7 +33,7 @@ class OrderPayView(View):
 			sign_type="RSA2",  # 签名的算法为RSA2
 			debug = True  # 默认False，沙箱环境改成True
 		)
-		#借助alipay对象，向支付宝发起支付请求n ,k..5
+		#借助alipay对象，向支付宝发起支付请求
 		#电脑网站支付，需要跳转到https://openapi.alipaydev.com/gateway.do?+order_string
 		order_string = alipay.api_alipay_trade_page_pay(
 			out_trade_no=order_id,  #订单id
