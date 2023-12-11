@@ -48,6 +48,8 @@ python 3.11
  alipay_public_key_path  =open(os.path.join("文件路径")).read()
 ```
 
+公钥泄露会怎么样：https://opensupport.alipay.com/support/FAQ/6b4c9dd7-d509-44b3-b59e-0355067afc99
+
 - 支付多少元是前端传来的，为了避免数据篡改，后端要查验一下是不是要支付这么多钱
 - ...待补充
 
