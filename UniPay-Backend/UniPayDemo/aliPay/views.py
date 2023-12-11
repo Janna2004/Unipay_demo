@@ -4,10 +4,10 @@ from django.http import JsonResponse
 from alipay import AliPay
 
 APPID="2021004129669299"
-APP_PRIVATE_KEY_PATH="/app_private_key.pem" # 生成的私钥路径，需要根据实际修改
-ALIPAY_PUBLIC_KEY_PATH="/alipay_public_key.pem" # 生成的公钥路径，需要根据实际修改
+APP_PRIVATE_KEY_PATH="C:\\Users\\86136\\Documents\\支付宝开放平台密钥工具\\pem\\app_private_key.txt" # 生成的私钥路径，需要根据实际修改
+ALIPAY_PUBLIC_KEY_PATH="C:\\Users\\86136\\Documents\\支付宝开放平台密钥工具\\pem\\alipay_public_key.txt" # 生成的公钥路径，需要根据实际修改
 
-def get_order_info(self,total_pay,request):
+def get_order_info(request):
     # 参数设置
     order_id = str(uuid.uuid1())
     merchant_private_key_path = open(os.path.join(APP_PRIVATE_KEY_PATH)).read()
@@ -24,6 +24,7 @@ def get_order_info(self,total_pay,request):
     )
 
     # 向支付宝发送请求
+    total_pay = request.GET.get('total_pay')
     result = alipay.api_alipay_trade_page_pay(
         out_trade_no=order_id,  # 订单id
         total_amount=str(total_pay),  # 支付宝总金额
@@ -36,4 +37,4 @@ def get_order_info(self,total_pay,request):
     # ...（根据您的需要处理和解析结果）
 
     # 将结果返回给前端
-    return JsonResponse(result)
+    return JsonResponse({'status': 'success', 'data': result})

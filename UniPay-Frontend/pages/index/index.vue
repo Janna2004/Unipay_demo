@@ -32,8 +32,9 @@
 					  } else if (res.tapIndex === 1) {
 						// 支付宝支付选项被选中
 						console.log('获取订单信息...');
+						var total=1;  //单位是分
 						uni.request({
-							url: 'https://mock.apifox.com/m1/2793897-0-default/uinipay', //仅为示例，并非真实接口地址。
+							url: 'http://127.0.0.1:8088/aliPaymentServer/getOrderInfo?total_pay='+total,
 							success: (res) => {
 								console.log("请求支付...");
 								uni.requestPayment({
