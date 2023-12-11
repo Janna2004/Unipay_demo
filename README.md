@@ -5,6 +5,7 @@
 ![img](https://paper-attachments.dropboxusercontent.com/s_6BE2F2DD0343517988ABE9CF5F556E8467F2528BFB715BAC1915666C5F926A21_1702120628113_image.png)
 
 # 支付宝支付——前端部分
+使用uniapp
 
 ## **界面规范**
 
@@ -25,7 +26,7 @@ https://opendocs.alipay.com/open/204/0191v1?pathHash=d80d9069
 链接：[https://zh.uniapp.dcloud.io/api/plugins/payment.html#app%E6%94%AF%E4%BB%98](https://zh.uniapp.dcloud.io/api/plugins/payment.html#app支付)
 
 # **支付宝支付——后端部分**
-
+使用django
 服务器需要生成订单信息，并传给前端
 
 ## **demo的python环境**
